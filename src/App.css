@@ -1,0 +1,86 @@
+.App {
+  padding: 10px;
+}
+
+.Header {
+  text-align: center;
+  font-family: 'AC Filmstrip';
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.List {
+  font-family: 'Actor';
+  font-size: 20px;
+}
+
+.List .List-Header {
+  padding: 10px;
+}
+
+.Table {
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.Table .Left-Pane {
+  width: 70%;
+  /* font-weight: normal; */
+}
+
+.Table .Right-Pane {
+  width: 30%;
+  /* font-weight: normal; */
+}
+
+tr {
+  background-color: #cafcfc;
+}
+
+td {
+  text-align: center;
+}
+
+.Recommend {
+  margin: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Recommend button {
+  width: 55%;
+  font-size: 16px;
+}
+
+.Signup {
+  margin: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Signup button {
+  align-self: center;
+  font-size: 16px;
+  width: 55%;
+}
+
+.Signup-List {
+  list-style-type: "\002B";
+  font-size: 12px
+}
+
+.Signup-List-Title {
+  margin-left: -10px;
+}
+
+@font-face {
+  font-family: "AC Filmstrip";
+  src: local("ACFilmstrip"), url("./fonts/ACFilmstrip.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Actor";
+  src: local("Actor"), url("./fonts/Actor.ttf") format("truetype");
+}
