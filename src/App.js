@@ -1,56 +1,98 @@
 import React, { useState } from 'react';
+
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import Signup from './components/Signup';
+import MyProfile from './components/MyProfile';
+import SharePopcorn from './components/SharePopcorn';
+import MyRatings from './components/MyRatings';
 
 import './App.css';
-import './fonts/Actor.ttf';
-import './fonts/ACFilmstrip.otf';
+import './assets/fonts/Actor.ttf';
+import './assets/fonts/ACFilmstrip.otf';
 
 function App () {
 
-  const [state, setState] = useState('MAIN');
-  // const [headerTitle1, setHeaderTitle1] = useState('Now');
-  // const [headerTitle2, setHeaderTitle2] = useState('Showing');
-  const [listTitle, setListTitle] = useState('My Favorites');
+  const [state, setState] = useState('RATINGS');
 
   const handleGetRecommend = () => {
     setState('RECOMMEND');
-    setListTitle('Try These');
   };
 
   const handleMoreRecommend = () => {
     setState('MAIN');
-    setListTitle('My Favorites');
 
   };
 
-  const headerTitle1 = 'Now';
-  const headerTitle2 = 'Showing';
+  const setNewState = (newState) => {
+    // console.log(newState);
+    setState(newState);
+  };
 
-  return (
-    <div className='App'>
-      <Header title1={headerTitle1} title2={headerTitle2} />
-      {state === 'MAIN' ?
-        (
-          <div>
-            <MovieList listTitle={listTitle} flag={true} />
-            <div className='Recommend'>
-              <button onClick={handleGetRecommend}> Get Recommendations </button>
-            </div>
-            <Signup flag={true} />
+  if (state === 'MAIN' || state === 'LOGIN') {
+    const headerTitle = 'Now Showing';
+    const listTitle = 'My Favorites';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <div>
+          <MovieList listTitle={listTitle} flag={true} />
+          <div className='Recommend'>
+            <button onClick={handleGetRecommend}> Get Recommendations </button>
           </div>
-        ) : (
-          <div>
-            <MovieList listTitle={listTitle} flag={false} />
-            <Signup flag={false} />
-            <div className='Recommend'>
-              <button onClick={handleMoreRecommend}> More Recommendations </button>
-            </div>
-          </div>)
-      }
-    </div>
-  );
+          <Signup state={state} setState={setNewState} />
+        </div>
+      </div>
+    );
+  } else if (state === 'RECOMMEND') {
+    const headerTitle = 'Now Showing';
+    const listTitle = 'Try These';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <div>
+          <MovieList listTitle={listTitle} flag={false} />
+          <Signup state={'RECOMMEND'} setState={setNewState} />
+          <div className='Recommend'>
+            <button onClick={handleMoreRecommend}> More Recommendations </button>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (state === 'SIGNUP') {
+    const headerTitle = 'Create Account';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <Signup state={'SIGNUP'} setState={setNewState} />
+      </div>
+    );
+  } else if (state === 'PROFILE') {
+    const headerTitle = 'My Profile';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <MyProfile />
+      </div>
+    );
+  } else if (state === 'SHARE') {
+    const headerTitle = 'Share Popcorn';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <SharePopcorn />
+      </div>
+    );
+  } else if (state === 'RATINGS') {
+    const headerTitle = 'My Ratings';
+    return (
+      <div className='App'>
+        <Header title={headerTitle} />
+        <MyRatings />
+      </div>
+    );
+  }
+
 }
 
 export default App;

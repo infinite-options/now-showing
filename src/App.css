@@ -26,16 +26,10 @@
 
 .Table .Left-Pane {
   width: 70%;
-  /* font-weight: normal; */
 }
 
 .Table .Right-Pane {
   width: 30%;
-  /* font-weight: normal; */
-}
-
-tr {
-  background-color: #cafcfc;
 }
 
 td {
@@ -60,7 +54,8 @@ td {
   flex-direction: column;
 }
 
-.Signup button {
+.Signup button,
+.Share button {
   align-self: center;
   font-size: 16px;
   width: 55%;
@@ -75,12 +70,52 @@ td {
   margin-left: -10px;
 }
 
+.Login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login form,
+.Create-Form,
+.Create-Account,
+.Profile,
+.Profile-User,
+.Profile-User label,
+.Share,
+.Share table {
+  padding: 20px
+}
+
+.Profile-Notif {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Share-Popcorn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Share table {
+  border-spacing: 30px 0;
+  border-collapse: separate;
+  align-content: center;
+}
+
+.Share tr {
+  vertical-align: bottom;
+}
+
 @font-face {
   font-family: "AC Filmstrip";
-  src: local("ACFilmstrip"), url("./fonts/ACFilmstrip.otf") format("opentype");
+  src: local("ACFilmstrip"), url("./assets/fonts/ACFilmstrip.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Actor";
-  src: local("Actor"), url("./fonts/Actor.ttf") format("truetype");
+  src: local("Actor"), url("./assets/fonts/Actor.ttf") format("truetype");
 }

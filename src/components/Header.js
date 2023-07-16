@@ -1,8 +1,11 @@
-function Header ({ title1, title2 }) {
+function Header ({ title, title2 }) {
+    const top = title.split(' ')[0];
+    const bottom = title.split(' ')[1];
+
     return (
         <div className='Header'>
-            <div>{title1}</div>
-            <div>{title2}</div>
+            <div>{top}</div>
+            <div>{bottom}</div>
         </div>
     );
 }
