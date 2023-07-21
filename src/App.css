@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  font-family: 'Iowan Old Style';
+  font-size: 12px;
+}
+
+.Header {
+  text-align: center;
+  font-family: 'AC Filmstrip';
+  font-size: 64px;
+  color: #FFC319;
+  line-height: 1.25;
+}
+
+.Profile {
+  padding: 20px;
+}
+
+.Movie-Summary {
+  font-family: 'Mulish';
+}
+
+.Movie-Summary .chip-text {
+  font-family: 'Mulish';
+  font-weight: 700;
+  color: #88A4E8;
+  padding: 10px;
+}
+
+.Movie-Summary .info-top {
+  color: #9C9C9C;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.Movie-Summary .info-bottom {
+  color: #DBE3FF;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+/* .Header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4f82A3;
+  padding: 20px;
+}
+
+.SearchBar {
+  background-color: #8DAAC8;
+  margin: 0 55px;
+  text-align: left;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.SearchBar .SearchIcon {
+  color: #ffffff;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+.SearchBar input {
+  color: #ffffff;
+  background: none;
+  border: none;
+  vertical-align: middle;
+  line-height: 2.5;
+  padding: 5px;
+
+}
+
+.SearchBar ::placeholder {
+  color: #ffffff;
+}
+
+.List {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.List .List-Header {
+  padding: 10px;
+}
+
+.List .List-Data {
+  box-shadow: #000000;
+  z-index: 1;
+}
+
+.Table {
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+} */
+
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather-Bold"), url("./assets/fonts/Merriweather-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Iowan Old Style";
+  src: local("Iowan-Old-Style"), url("./assets/fonts/Iowan-Old-Style.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AC Filmstrip";
+  src: local("ACFilmstrip"), url("./assets/fonts/ACFilmstrip.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Regular"), url("./assets/fonts/Mulish-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-SemiBold"), url("./assets/fonts/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Bold"), url("./assets/fonts/Mulish-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

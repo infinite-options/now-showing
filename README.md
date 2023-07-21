@@ -1,2 +1,3 @@
 # Now Showing
-Now Showing Movie Recommendor
+
+Now Showing Movie Recommender
