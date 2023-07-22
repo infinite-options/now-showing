@@ -12,10 +12,20 @@
   font-size: 64px;
   color: #FFC319;
   line-height: 1.25;
+  padding-bottom: 20px;
 }
 
 .Profile {
   padding: 20px;
+}
+
+.Profile .Icons-Btn {
+  justify-content: space-around;
+}
+
+.Profile .popcorn {
+  height: 45px;
+  width: 45px;
 }
 
 .Movie-Summary {
@@ -73,8 +83,6 @@
   font-size: 20px;
   line-height: 22px;
   color: #DBE3FF;
-
-
 }
 
 .Movie-Desc .desc-text {
@@ -131,6 +139,21 @@
   height: 25px;
   padding: 15px;
 }
+
+.SignUp {
+  padding: 15px;
+}
+
+.SignUp .SignUp-Button {
+  width: 50%;
+  align-self: center;
+  border-radius: 70px;
+}
+
+.SignUp .login-btn {
+  border-radius: 70px;
+}
+
 
 /* .Header {
   display: flex;

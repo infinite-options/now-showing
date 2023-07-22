@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Stack, TextField, Box } from '@mui/material';
+import { Stack, TextField } from '@mui/material';
 import { ThumbDown, ThumbUp } from '@mui/icons-material';
 
 function MyProfile () {
@@ -109,22 +109,28 @@ function MyProfile () {
                                 }
                             }} />
                     </Stack>
-                    <Stack spacing={2} sx={{ padding: '20px' }}>
-                        <Box>
-                            <img height={'80px'}
-                                id='popcorn-img'
+                    <Stack
+                        direction={'row'}
+                        spacing={2}
+                        justifyContent={'space-between'}
+                        sx={{ padding: '20px' }}>
+                        <Stack
+                            spacing={0.5}
+                            className='Icons-Btn'>
+                            <img
+                                className='popcorn'
                                 alt='Buy Me Popcorn'
                                 src={require('../assets/img/ph_popcorn.png')}
                             />
-                            <br />
-                            <label htmlFor='popcorn-img'>Buy Me Popcorn</label>
-                        </Box>
-                        <Box>
-                            <ThumbUp />
-                            <ThumbDown />
-                            <br />
-                            <label>Notifications?</label>
-                        </Box>
+                            <div>Buy Me Popcorn</div>
+                        </Stack>
+                        <Stack spacing={2} justifyContent={'space-around'}>
+                            <Stack direction={'row'} justifyContent={'space-evenly'}>
+                                <ThumbUp />
+                                <ThumbDown />
+                            </Stack>
+                            <div>Notifications?</div>
+                        </Stack>
                     </Stack>
                     <Stack>
                         <TextField
