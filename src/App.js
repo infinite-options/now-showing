@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material';
 
 import Header from './components/Header';
@@ -9,8 +9,7 @@ import SignUp from './components/SignUp';
 import './App.css';
 
 function App() {
-    // const state = 'MOVIE';
-    const state = 'SIGNUP';
+    const [state, setState] = useState('SIGNUP');
 
     const darkTheme = createTheme({
         palette: {
@@ -18,12 +17,25 @@ function App() {
         },
     });
 
+    const setNewState = (newState) => {
+        setState(newState);
+    };
+
     if (state === 'SIGNUP') {
         return (
             <ThemeProvider theme={darkTheme}>
                 <div className="App">
                     <Header title={'Create Account'} />
-                    <SignUp />
+                    <SignUp newState={state} setNewState={setNewState} />
+                </div>
+            </ThemeProvider>
+        );
+    } else if (state === 'LOGIN') {
+        return (
+            <ThemeProvider theme={darkTheme}>
+                <div className="App">
+                    <Header title={'Login'} />
+                    <SignUp newState={state} setNewState={setNewState} />
                 </div>
             </ThemeProvider>
         );
