@@ -13,14 +13,21 @@ const MovieCategoriesButtonContainer = styled.div`
 `;
 
 const RecommendationButtonContainer = styled.div`
-  padding-bottom: 30px;
+  padding-top: 34px;
+  padding-bottom: 34px;
 `;
 
 const LoginButtonContainer = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 `;
 
 const CreateAccountButtonContainer = styled.div`
+  /* margin-top: 25px; */
+  padding-bottom: 34px;
+`;
+
+const CreateAccountButtonContainer2 = styled.div`
+  margin-top: 25px;
   padding-bottom: 30px;
 `;
 
@@ -96,6 +103,19 @@ const Button5 = styled.button`
   height: 34px;
 `;
 
+const Button6 = styled.button`
+  background: #8daac8;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ffc319;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  width: 223px;
+  height: 34px;
+`;
+
 const IconContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -150,6 +170,14 @@ export const CreateAccountButton = () => {
     <CreateAccountButtonContainer>
       <Button4>Create Account</Button4>
     </CreateAccountButtonContainer>
+  );
+};
+
+export const CreateAccountButton2 = () => {
+  return (
+    <CreateAccountButtonContainer2>
+      <Button6>Create Account</Button6>
+    </CreateAccountButtonContainer2>
   );
 };
 

@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MovieIcon from "@mui/icons-material/Movie";
-
-//later just convert to 1 page
-//use terniary to display either favorites or now showing text and icon
-//as well transition for movie categories
+import PopcornIcon from "../assets/icons/PopcornIcon.svg";
 
 const Container = styled.div`
   display: flex;
@@ -19,17 +15,28 @@ const BoxContainer = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  width: 349px;
+  height: 46px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid red;
 `;
 
-const IconContainer = styled(MovieIcon)`
-  padding-left: 90px;
+const Icon = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+
+const IconContainer = styled.div`
+  padding-left: 194px;
   padding-right: 10px;
   font-style: 20px;
 `;
 const MyFavorites = styled.h2`
   font-size: 20px;
   font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
   color: #dbe3ff;
   font-family: "Merriweather", serif;
 `;
@@ -40,7 +47,7 @@ const TryTheseText = () => {
       <BoxContainer>
         <MyFavorites>Try These</MyFavorites>
         <IconContainer>
-          <MovieIcon sx={{ fontSize: 20 }} />
+          <Icon src={PopcornIcon} alt="popcorn icon" />
         </IconContainer>
       </BoxContainer>
     </Container>

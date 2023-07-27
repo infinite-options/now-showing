@@ -26,25 +26,19 @@ const InnerContainer = styled.div`
   flex: 1;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 18px;
+  margin-left: 23px;
+  margin-right: 21px;
   max-width: 349px;
   height: 46px;
+  border-radius: 5px;
 `;
 const Form = styled.div`
   margin-right: 10px;
 `;
 const RatingSlider = styled(Slider)`
   max-width: 100px;
-  /* && {
-    .MuiSlider-thumb {
-      background: url("../assets/icons/star.svg");
-      cursor: pointer;
-    }
-  } */
 `;
 
-const CurrentValue = styled.p`
-  margin-left: 10px;
-`;
 const MovieInput = (props) => {
   const { values } = props;
   const [sliderValue, setSliderValue] = useState(0);
@@ -73,9 +67,10 @@ const MovieInput = (props) => {
           min={0}
           max={10}
           step={1}
+          valueLabelDisplay="auto"
+          aria-label="Rating"
         ></RatingSlider>
       </InnerContainer>
-      <CurrentValue>{/* <p>{sliderValue}</p> */}</CurrentValue>
     </Container>
   );
 };

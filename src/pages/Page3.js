@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import {
-  CreateAccountButton,
+  CreateAccountButton2,
   GetMoreRecommendationButtonWithIcons,
 } from "../components/Buttons";
 import TryTheseButton from "../components/TryTheseText";
@@ -24,7 +24,7 @@ const Page3 = () => {
       <TryTheseButton />
       <GetMoreRecommendationButtonWithIcons />
       <Movies>{(movies) => <MovieCard movies={movies} />}</Movies>
-      <CreateAccountButton />
+      <CreateAccountButton2 />
     </Container>
   );
 };

@@ -11,15 +11,17 @@ const Container = styled.div`
 `;
 
 const BoxContainer = styled.div`
-  padding-left: 10px;
   display: flex;
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 349px;
+  height: 46px;
+  border-radius: 5px;
+  margin-bottom: 27px;
 `;
 
 const IconContainer = styled.div`
-  padding-left: 90px;
-  padding-right: 10px;
+  padding-left: 190px;
   font-style: 20px;
 `;
 
@@ -28,6 +30,7 @@ const MyFavorites = styled.h2`
   font-weight: 700;
   color: #dbe3ff;
   font-family: "Merriweather", serif;
+  padding-left: 19px;
 `;
 
 const Icon = styled.img`

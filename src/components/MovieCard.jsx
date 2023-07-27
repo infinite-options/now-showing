@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import MovieList from "./MovieList";
+import MovieList from "./MovieList2";
+import MovieRatingSlider from "./MovieRatingSlider";
 
 const CardContainer = styled.div`
   display: grid;
@@ -14,6 +15,7 @@ const MovieCard = (props) => {
   const { movies } = props;
   return (
     <CardContainer>
+      <MovieRatingSlider />
       <MovieList movies={movies} />
     </CardContainer>
   );
