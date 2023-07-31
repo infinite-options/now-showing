@@ -57,6 +57,14 @@ function App() {
                 </div>
             </ThemeProvider>
         );
+    } else if (state === 'HOME') {
+        return (
+            <ThemeProvider theme={darkTheme}>
+                <div className="App">
+                    <Header title={'Now Showing'} />
+                </div>
+            </ThemeProvider>
+        );
     }
 }
 
