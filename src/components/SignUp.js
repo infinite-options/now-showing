@@ -45,8 +45,6 @@ function SignUp({ newState, setNewState }) {
     let SCOPES =
         'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
 
-    // let codeClient = {};
-
     const handleInputs = (e) => {
         const name = e.target.name;
         const value = e.target.value;

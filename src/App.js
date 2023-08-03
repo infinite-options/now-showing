@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme, Button } from '@mui/material';
 
 import Header from './components/Header';
 import MyProfile from './components/MyProfile';
@@ -7,6 +7,9 @@ import MovieSummary from './components/MovieSummary';
 import SignUp from './components/SignUp';
 
 import './App.css';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
 
 function App() {
     const [state, setState] = useState('SIGNUP');
@@ -19,6 +22,22 @@ function App() {
 
     const setNewState = (newState) => {
         setState(newState);
+    };
+
+    const handleNext = () => {
+        if (state === 'HOME') {
+            setState('PAGE2');
+        } else if (state === 'PAGE2') {
+            setState('PAGE3');
+        }
+    };
+
+    const handlePrev = () => {
+        if (state === 'PAGE2') {
+            setState('HOME');
+        } else if (state === 'PAGE3') {
+            setState('PAGE2');
+        }
     };
 
     if (state === 'SIGNUP') {
@@ -61,7 +80,44 @@ function App() {
         return (
             <ThemeProvider theme={darkTheme}>
                 <div className="App">
-                    <Header title={'Now Showing'} />
+                    {/* <Header title={'Now Showing'} /> */}
+                    <Page1 />
+                    <Button onClick={handlePrev} variant="outlined" disabled>
+                        Prev
+                    </Button>
+                    <Button onClick={handleNext} variant="outlined">
+                        Next
+                    </Button>
+                </div>
+            </ThemeProvider>
+        );
+    } else if (state === 'PAGE2') {
+        return (
+            <ThemeProvider theme={darkTheme}>
+                <div className="App">
+                    {/* <Header title={'Now Showing'} /> */}
+                    <Page2 />
+                    <Button onClick={handlePrev} variant="outlined">
+                        Prev
+                    </Button>
+                    <Button onClick={handleNext} variant="outlined">
+                        Next
+                    </Button>
+                </div>
+            </ThemeProvider>
+        );
+    } else if (state === 'PAGE3') {
+        return (
+            <ThemeProvider theme={darkTheme}>
+                <div className="App">
+                    {/* <Header title={'Now Showing'} /> */}
+                    <Page3 />
+                    <Button onClick={handlePrev} variant="outlined">
+                        Prev
+                    </Button>
+                    <Button onClick={handleNext} variant="outlined" disabled>
+                        Next
+                    </Button>
                 </div>
             </ThemeProvider>
         );
