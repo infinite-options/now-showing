@@ -8,7 +8,6 @@ const MoviePosterContainer = styled.div`
   grid-template-columns: repeat(2, 2fr);
   gap: 0px;
   justify-items: center;
-  /* border: 1px solid red; */
 `;
 
 const MoviePoster = styled.div`
@@ -16,7 +15,6 @@ const MoviePoster = styled.div`
   padding: 12px;
   margin-bottom: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-  /* border: 1px solid yellow; */
 
   img {
     max-width: 100%;

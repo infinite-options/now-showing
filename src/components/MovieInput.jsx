@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Slider from "@mui/material/Slider";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -32,19 +33,30 @@ const InnerContainer = styled.div`
   height: 46px;
   border-radius: 5px;
 `;
+
 const Form = styled.div`
   margin-right: 10px;
 `;
+
 const RatingSlider = styled(Slider)`
   max-width: 100px;
 `;
 
-const MovieInput = (props) => {
-  const { values } = props;
-  const [sliderValue, setSliderValue] = useState(0);
+const MovieInput = ({ title, sliderValue, onInputChange, onSliderChange }) => {
+  const navigate = useNavigate();
 
   const handleSlider = (e, val) => {
-    setSliderValue(val);
+    // onSliderChange(val);
+  };
+
+  const handleAddButtonClick = () => {
+    if (title.trim() !== "") {
+      navigate(`/page4/${encodeURIComponent(title)}`);
+    }
+  };
+
+  const handleInputChange = (event) => {
+    onInputChange(event.target.value);
   };
 
   return (
@@ -53,14 +65,14 @@ const MovieInput = (props) => {
         <Form>
           <form className="form-container">
             <Input
-              value={values}
+              value={title}
               name="title"
               type="text"
               placeholder="Add movie title"
+              onChange={handleInputChange}
             />
           </form>
         </Form>
-
         <RatingSlider
           value={sliderValue}
           onChange={handleSlider}
@@ -69,8 +81,9 @@ const MovieInput = (props) => {
           step={1}
           valueLabelDisplay="auto"
           aria-label="Rating"
-        ></RatingSlider>
+        />
       </InnerContainer>
+      <button onClick={handleAddButtonClick}>Add</button>
     </Container>
   );
 };
