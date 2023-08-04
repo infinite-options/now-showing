@@ -18,7 +18,6 @@ const BoxContainer = styled.div`
   width: 349px;
   height: 46px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-  border: 1px solid red;
 `;
 
 const Icon = styled.img`

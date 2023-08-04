@@ -25,6 +25,9 @@ const MoviePoster = styled.div`
 `;
 
 const MovieTitle = styled.h3`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-family: "Mulish", sans-serif;
   color: rgba(255, 255, 255, 1);

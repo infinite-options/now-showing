@@ -35,11 +35,17 @@ const CreateAccountButtonContainer = styled.div`
 `;
 
 const CreateAccountButtonContainer2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 25px;
   padding-bottom: 30px;
 `;
 
 const GetMoreRecommendationsButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 30px;
 `;
 
