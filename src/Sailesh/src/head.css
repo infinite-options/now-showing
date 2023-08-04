@@ -1,0 +1,522 @@
+.head{
+  text-align: center;
+  font-family: 'AC Filmstrip';
+  font-size: 64px;
+  color: #FFC319;
+  line-height: 1.25;
+    }
+
+    @font-face {
+        font-family: "AC Filmstrip";
+        src: local("ACFilmstrip"), url("./font/ACFilmstrip.otf") format("opentype");
+        font-weight: normal;
+      }
+
+
+.page{
+    justify-content: center;
+    align-self:center;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.body{
+    background-color: 
+    rgba(141, 170, 200, 0.22);
+    width: 292px;
+    height: 37px;
+    top:2px;
+    position: relative;
+    border-radius: 15ex;
+    color: white;
+    border: 0px;
+}
+
+.body2{
+    background-color: 
+    rgba(141, 170, 200, 0.22);
+    width: 292px;
+    height: 37px;
+    top:2cm;
+    position: relative;
+    border-radius: 15ex;
+   color: white;
+   border: 0px;
+}
+.Signup {
+    width: 195px;
+    height: 45px;
+    background-color:#8DAAC8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 15em;
+    font-weight: 700;
+    top:0.5cm;
+    color:white;
+}
+
+.Signup2 {
+    width: 195px;
+    height: 45px;
+    background-color:#8DAAC8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 15em;
+    font-weight: 700;
+    top:2cm;
+    color:white;
+}
+
+
+.text{
+    color: white;
+}
+
+.google {
+    background-image: url("./Icon/google.png");
+    background-color: #8DAAC8;
+    width: 292px;
+    height: 37px;
+    position: relative;
+    border-radius: 15ex;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:1.5cm;
+    font-weight: 700;
+    color:white;
+}
+.google2 {
+    background-image: url("./Icon/google.png");
+    background-color: #8DAAC8;
+    width: 292px;
+    height: 37px;
+    position: relative;
+    border-radius: 15ex;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:3.3cm;
+    font-weight: 700;
+    color:white;
+   
+}
+.instagram{
+    background-color: #8DAAC8;
+    width: 292px;
+    height: 37px;
+    position: relative;
+    border-radius: 15ex;
+    top:1.6cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+   color:white;
+}
+.instagram2{
+    background-color: #8DAAC8;
+    width: 292px;
+    height: 37px;
+    position: relative;
+    border-radius: 15ex;
+    top:3.4cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    color:white;
+}
+
+
+.star{
+    background-image: url("./Icon/Star.png");
+    position:relative;
+    width: 23px;
+    height: 23px;
+
+    }
+
+.favourite{
+    background-image: url("./Icon/favourite.png");
+    position:relative;
+    width: 28px;
+    height: 28px;
+    
+}
+
+.vectoricon{
+    background-image: url("./Icon/Vector.png");
+    position:relative;
+    background-repeat:no-repeat;
+    width: 30px;
+    height: 30px;
+   
+}
+
+.popcorn{
+    background-image: url("./Icon/ph_popcorn.png");
+    position:relative;
+    width: 28px;
+    height: 31px;
+  
+}
+
+.Iconlist{
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    gap: 5px;
+    top:0.9cm;
+   
+}
+
+.First{
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top:1.5cm;
+}
+
+
+
+
+
+.vector{
+    background-Color:#8DAAC8;
+    height: 2px;
+    width: 118px;
+    border-radius:2px;
+}
+
+.middle{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    top:1cm;
+}
+.middle2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    top:2.5cm;
+}
+
+.last{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: medium;
+    position: relative;
+    top:2.0cm;
+}
+
+.last3{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: medium;
+    position: relative;
+    top:2.5cm;
+}
+
+.last2{
+    color: whitesmoke;
+    background-color: #192027;
+    border: none;
+    font-weight: 400;
+    font-size: small;
+    position: relative;
+    top:2.7cm;
+}
+
+.Firstcorn1{
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top:-1cm;
+    left:-1cm;
+}
+.Firstcorn2{
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top:-1cm;
+    left:-0.8cm;
+}
+.Firstcorn3{
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top:-1.2cm;
+    left:-0.5cm;
+}
+
+ .popicon{
+    justify-content: center;
+    align-self:center;
+    display: flex;
+    flex-direction:row;
+    gap:30px;
+ }
+
+ .popicon1{
+    justify-content: center;
+    align-self:center;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    top:2.3cm;
+    width:122px;
+ }
+
+ .popimage1{
+    background-image: url("./Icon/ph_popcorn.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    position: relative;
+    background-color: #192027;
+    border: none;
+    height: 72px;
+ }
+
+ .popimage2{
+    background-image: url("./Icon/ph_popcorn.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-color: #192027;
+    border: none;
+    height: 102px;
+ }
+
+ .popimage3{
+    background-image: url("./Icon/ph_popcorn.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-color: #192027;
+    border: none;
+    height: 133px;
+ }
+
+.other{
+    justify-content: center;
+    align-self:center;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    top:1.8cm;
+    left:-0.9cm;
+}
+
+.otherbox{
+    background-image: url("./Icon/$.png");
+    background-repeat: no-repeat;
+    background-position: 2.2%;
+    background-color: 
+    #D9D9D9;
+    width: 84px;
+    height: 22px;
+    position: relative;
+    border-radius: 15ex;
+}
+.Second{
+    display: flex;
+    flex-direction:row;
+    color: white;
+    font-weight: 400;
+    gap:10px;
+}
+.Thanks{
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top:2.5cm;
+
+}
+.donate{
+    background-color:rgba(255, 195, 25, 1);
+    width: 152px;
+    height: 35px;
+    position: relative;
+    border-radius: 15ex;
+    top:3.9cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+      gap:5px;
+}
+
+.Firstname{
+    background-color: rgba(211, 211, 211, 0.653);
+      width: 172px;
+      height: 49px;
+      position: relative;
+      border-radius: 13px;
+      top:2cm;
+      border: 0px;
+}
+
+.Stagename{
+    background-color: rgba(211, 211, 211, 0.653);
+      width: 357px;
+      height: 50px;
+      position: relative;
+      border-radius: 15ex;
+      color: black;
+      border-radius: 13px;
+      top:2.05cm;
+      border: 0px;
+}
+
+.totalprofile{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+}
+
+.popimagenew{
+    background-image: url("./Icon/ph_popcorn.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    position: relative;
+    width: 63px;
+    height: 72px;
+    top:2.5cm;
+    left:40%;
+}
+
+.popicon2{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+
+}
+
+
+
+.First2{
+    color: white;
+    font-weight: 400;
+    left:7%;
+    position: relative;
+    top:1.5cm;
+    background-color: #192027;
+    border: none;
+}
+
+.notification{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbsup{
+    background-image: url("./Icon/Thumbsup.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    position: relative;
+    width: 63px;
+    height: 72px;
+    top:2.5cm;
+    left:100%;
+}
+
+.thumbsdown{
+    background-image: url("./Icon/Thumbdown.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    position: relative;
+    width: 63px;
+    height: 72px;
+    top:2.5cm;
+    left:80%;
+}
+
+.notification2{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+}
+.First3{
+    color: white;
+    font-weight: 400;
+    background-color: #192027;
+    border: none;
+    left:80%;
+    position: relative;
+    top:1.5cm;
+}
+
+.CurrentPassword{
+    background-color: rgba(211, 211, 211, 0.653);
+      width: 357px;
+      height: 50px;
+      position: relative;
+      border-radius: 13px;
+      top:2.5cm;
+     border: 0px;
+     text-align: 20cm;
+}
+
+.Changepassword{
+    background-color: #FFC319;
+     text-align:center;
+      width: 190px;
+      height: 35px;
+      position: relative;
+      border-radius: 12px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      top: 3cm;
+      left:1%;
+}
+
+
+
+.Logout{
+    background-color: #FFC319;
+    text-align:center;
+      width: 142px;
+      height: 35px;
+      position: relative;
+      border-radius:12px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      top: 3cm;
+      left:8%;
+}
+
