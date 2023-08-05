@@ -8,6 +8,7 @@ import {
 import MovieInput from "../components/MovieInput";
 import { NowShowingHeader } from "../components/NowShowingText";
 import MyFavoritesText from "../components/MyFavoritesText";
+// import { useNavigate } from "react-router-dom";
 
 const PageBG = createGlobalStyle`
   body {background-color: #192027;}
@@ -21,6 +22,7 @@ const MyFavoritesTextWrapper = styled.div``;
 
 const Container = styled.div``;
 
+//Page 1 - Logged Out
 const Page1 = () => {
   const [movieInputs, setMovieInputs] = useState([
     { title: "" },
@@ -61,6 +63,16 @@ const Page1 = () => {
       />
     ));
   };
+
+  // const navigate = useNavigate();
+
+  // const handleLoginClick = () => {
+  //   navigate("/Login/");
+  // };
+
+  // const handleCreateAccountClick = () => {
+  //   navigate("/CreateAccount/");
+  // };
 
   return (
     <Container>

@@ -4,6 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 import FavoriteIcon from "../assets/icons/FavoriteIcon.svg";
 import ProfileIcon from "../assets/icons/ProfileIcon.svg";
 import PopcornIcon from "../assets/icons/PopcornIcon.svg";
+import { useNavigate } from "react-router-dom";
 
 const MovieCategoriesButtonContainer = styled.div`
   display: flex;
@@ -43,6 +44,13 @@ const CreateAccountButtonContainer2 = styled.div`
 `;
 
 const GetMoreRecommendationsButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+`;
+
+const GetMoreRecommendationsButtonContainer2 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,12 +146,13 @@ const IconContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  pointer-events: none;
 `;
 
 const Icon = styled.img`
   width: 24px;
   height: 24px;
-
+  padding-left: 10px;
   .FavoriteIcon {
     width: 28px;
     height: 28px;
@@ -171,12 +180,32 @@ const Button7 = styled.button`
   height: 40px;
 `;
 
+const Button8 = styled.button`
+  background: #8daac836;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgba(219, 227, 255, 0.81);
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  width: 223px;
+  height: 34px;
+`;
+
+const PopcornIconContainer = styled.div`
+  cursor: pointer;
+`;
+
 export const MovieCategoriesButton = () => {
   return (
     <MovieCategoriesButtonContainer>
       <Button>Action</Button>
       <Button>Comedy</Button>
-      <Button>Adventure</Button>
+      <Button>Fantasy</Button>
+      <Button>Drama</Button>
     </MovieCategoriesButtonContainer>
   );
 };
@@ -198,17 +227,29 @@ export const GetMoreRecommendationButton = () => {
 };
 
 export const LoginButton = () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/Login");
+  };
+
   return (
     <LoginButtonContainer>
-      <Button3>Login</Button3>
+      <Button3 onClick={handleLoginClick}>Login</Button3>
     </LoginButtonContainer>
   );
 };
 
 export const CreateAccountButton = () => {
+  const navigate = useNavigate();
+
+  const handleCreateAccountClick = () => {
+    navigate("./CreateAccount/");
+  };
+
   return (
     <CreateAccountButtonContainer>
-      <Button4>Create Account</Button4>
+      <Button4 onClick={handleCreateAccountClick}>Create Account</Button4>
     </CreateAccountButtonContainer>
   );
 };
@@ -222,16 +263,61 @@ export const CreateAccountButton2 = () => {
 };
 
 export const GetMoreRecommendationButtonWithIcons = () => {
+  const navigate = useNavigate();
+
+  const handleRecommendationClick = () => {
+    navigate("/pages/page6");
+  };
+
+  const handleProfileClick = () => {
+    console.log("working");
+    navigate("/MyProfile2");
+  };
   return (
-    <GetMoreRecommendationsButtonContainer>
+    <GetMoreRecommendationsButtonContainer onClick={handleRecommendationClick}>
       <IconContainer>
         <StyledIcon />
         <Icon src={FavoriteIcon} alt="favorite icon" />
         <Button5>Get More Recommendations</Button5>
-        <Icon src={ProfileIcon} className="FavoriteIcon" alt="profile icon" />
+        <Icon
+          src={ProfileIcon}
+          className="FavoriteIcon"
+          alt="profile icon"
+          onClick={handleProfileClick}
+        />
         <Icon src={PopcornIcon} alt="popcorn icon" />
       </IconContainer>
     </GetMoreRecommendationsButtonContainer>
+  );
+};
+
+export const GetMoreRecommendationButtonWithIcons2 = () => {
+  const navigate = useNavigate();
+
+  const handleGetRecommendationClick = () => {
+    navigate("/pages/Page3");
+    console.log(`navigating to page 3`);
+  };
+
+  const handlePopcornClick = () => {
+    console.log("working");
+    navigate("/pages/Popcorn");
+  };
+  return (
+    <GetMoreRecommendationsButtonContainer2
+      onClick={handleGetRecommendationClick}
+    >
+      <IconContainer>
+        <StyledIcon />
+        <Button8 onClick={handleGetRecommendationClick}>
+          Get More Recommendations
+        </Button8>
+
+        <PopcornIconContainer onClick={handlePopcornClick}>
+          <Icon src={PopcornIcon} alt="popcorn icon" />
+        </PopcornIconContainer>
+      </IconContainer>
+    </GetMoreRecommendationsButtonContainer2>
   );
 };
 

@@ -16,6 +16,7 @@ const PageBG = createGlobalStyle`
 
 const Container = styled.div``;
 
+//Page 2 - Logged Out
 const Page2 = () => {
   return (
     <Container>
