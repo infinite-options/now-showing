@@ -7,7 +7,7 @@ import MyProfile2 from "./MyProfile2.js";
 import Page1 from "./pages/Page1.js";
 import Page2 from "./pages/Page2.js";
 import Page3 from "./pages/Page3.js";
-// import Page4 from "./pages/Page4.js";
+import Page4 from "./pages/Page4.js";
 import Page5 from "./pages/Page5.js";
 import Page6 from "./pages/Page6.js";
 import Popcorn from "./pages/Popcorn.js";
@@ -27,9 +27,9 @@ function App() {
         <Route path="/Myprofile2" element={<MyProfile2 />} />
         <Route path="/pages/Popcorn" element={<Popcorn />} />
 
-        {/* <Route path="/page4/:movie_title" element={<Page4 />} /> */}
-        {/* <Route path="/" element={<Page4 />} />
-        <Route path="/page4/:movie_title" element={<Page4 />} /> */}
+        <Route path="/pages/page4/:movie_title" element={<Page4 />} />
+        <Route path="/" element={<Page4 />} />
+        {/* <Route path="/pages/page4/:movie_title" element={<Page4 />} /> */}
       </Routes>
     </Router>
   );

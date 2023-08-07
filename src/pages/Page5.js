@@ -8,10 +8,6 @@ import MovieInput from "../components/MovieInput";
 // import { useNavigate } from "react-router-dom";
 import { MyRatingsHeader } from "../components/MyRatingsText";
 
-const PageBG = createGlobalStyle`
-  body {background-color: #192027;}
-`;
-
 const Container = styled.div``;
 
 //Page 5 - Logged In?
@@ -73,7 +69,6 @@ const Page5 = () => {
 
   return (
     <Container>
-      <PageBG />
       <MyRatingsHeader />
       <MovieCategoriesButton />
       <GetMoreRecommendationButtonWithIcons2 />

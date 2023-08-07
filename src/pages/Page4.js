@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { WhichMovieHeader } from "../components/WhichMovieText";
-
-const PageBG = createGlobalStyle`
-  body {background-color: #192027;}
-`;
 
 const MovieContainer = styled.div`
   display: flex;
@@ -104,7 +100,6 @@ const Page4 = () => {
 
   return (
     <div>
-      <PageBG />
       <WhichMovieHeader />
       <MovieContainer>
         {movies.length > 0 ? (
