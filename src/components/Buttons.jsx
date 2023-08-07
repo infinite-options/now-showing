@@ -195,10 +195,6 @@ const Button8 = styled.button`
   height: 34px;
 `;
 
-const PopcornIconContainer = styled.div`
-  cursor: pointer;
-`;
-
 export const MovieCategoriesButton = () => {
   return (
     <MovieCategoriesButtonContainer>
@@ -294,28 +290,26 @@ export const GetMoreRecommendationButtonWithIcons = () => {
 export const GetMoreRecommendationButtonWithIcons2 = () => {
   const navigate = useNavigate();
 
-  const handleGetRecommendationClick = () => {
-    navigate("/pages/Page3");
-    console.log(`navigating to page 3`);
-  };
+  // const handleGetRecommendationClick = () => {
+  //   navigate("/pages/Page3");
+  //   console.log(`navigating to page 3`);
+  // };
 
   const handlePopcornClick = () => {
-    console.log("working");
-    navigate("/pages/Popcorn");
+    console.log("this should navigate to popcorn.js");
+    navigate("/pages/page1");
   };
   return (
-    <GetMoreRecommendationsButtonContainer2
-      onClick={handleGetRecommendationClick}
-    >
+    <GetMoreRecommendationsButtonContainer2>
       <IconContainer>
         <StyledIcon />
-        <Button8 onClick={handleGetRecommendationClick}>
-          Get More Recommendations
-        </Button8>
+        <Button8>Get More Recommendations</Button8>
 
-        <PopcornIconContainer onClick={handlePopcornClick}>
-          <Icon src={PopcornIcon} alt="popcorn icon" />
-        </PopcornIconContainer>
+        <Icon
+          src={PopcornIcon}
+          alt="popcorn icon"
+          onClick={handlePopcornClick}
+        />
       </IconContainer>
     </GetMoreRecommendationsButtonContainer2>
   );
