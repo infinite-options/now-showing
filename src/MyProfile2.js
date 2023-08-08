@@ -1,7 +1,14 @@
 import React from "react";
 import "./head.css";
+import { useNavigate } from "react-router-dom";
 
 const MyProfile2 = () => {
+  const navigate = useNavigate();
+
+  const handlePopcornClick = () => {
+    navigate("/pages/Popcorn");
+  };
+
   return (
     <div className="cover">
       <div className="head" id="">
@@ -19,7 +26,7 @@ const MyProfile2 = () => {
         <input className="Stagename" placeholder="Phone Number" />
         <div className="notification">
           <div className="popicon2">
-            <div className="popimagenew"></div>
+            <div className="popimagenew" onClick={handlePopcornClick}></div>
             <button className="First2">Buy Me a Popcorn</button>
           </div>
           <div className="notification2">

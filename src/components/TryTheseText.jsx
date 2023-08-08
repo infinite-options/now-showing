@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PopcornIcon from "../assets/icons/PopcornIcon.svg";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const BoxContainer = styled.div`
 const Icon = styled.img`
   width: 24px;
   height: 24px;
+  cursor: pointer;
 `;
 
 const IconContainer = styled.div`
@@ -41,12 +43,21 @@ const MyFavorites = styled.h2`
 `;
 
 const TryTheseText = () => {
+  const navigate = useNavigate();
+
+  const handlePopcornClick = () => {
+    navigate("/pages/Popcorn");
+  };
   return (
     <Container>
       <BoxContainer>
         <MyFavorites>Try These</MyFavorites>
         <IconContainer>
-          <Icon src={PopcornIcon} alt="popcorn icon" />
+          <Icon
+            src={PopcornIcon}
+            onClick={handlePopcornClick}
+            alt="popcorn icon"
+          />
         </IconContainer>
       </BoxContainer>
     </Container>

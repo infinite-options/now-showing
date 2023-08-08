@@ -12,7 +12,7 @@ import TryTheseText from "../components/TryTheseText";
 const Container = styled.div``;
 
 //Page 2 - Logged Out
-const Page2 = () => {
+const TryThese = () => {
   return (
     <Container>
       <NowShowingHeader />
@@ -24,4 +24,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default TryThese;

@@ -207,9 +207,13 @@ export const MovieCategoriesButton = () => {
 };
 
 export const RecommendationButton = () => {
+  const navigate = useNavigate();
+  const handleRecommendation = () => {
+    navigate("/pages/Recommendations");
+  };
   return (
     <RecommendationButtonContainer>
-      <Button2>Get Recommendations</Button2>
+      <Button2 onClick={handleRecommendation}>Get Recommendations</Button2>
     </RecommendationButtonContainer>
   );
 };

@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleMyRating = () => {
-    navigate("/pages/page6");
+    navigate("/pages/Recommendations");
   };
 
   return (

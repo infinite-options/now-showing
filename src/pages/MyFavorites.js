@@ -23,7 +23,7 @@ const MyFavoritesTextWrapper = styled.div``;
 const Container = styled.div``;
 
 //Page 1 - Logged Out
-const Page1 = () => {
+const MyFavorites = () => {
   const [movieInputs, setMovieInputs] = useState([
     { title: "" },
     { title: "" },
@@ -89,4 +89,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default MyFavorites;

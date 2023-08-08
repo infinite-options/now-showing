@@ -1,7 +1,22 @@
 import React from "react";
 import "../head.css";
+import { useNavigate } from "react-router-dom";
 
 const Popcorn = () => {
+  const navigate = useNavigate();
+
+  const handleProfileClick = () => {
+    navigate("/MyProfile2");
+  };
+
+  const handleFavoritesClick = () => {
+    navigate("/");
+  };
+
+  const handleRatingsClick = () => {
+    navigate("/pages/MyRatings");
+  };
+
   return (
     <div className="cover">
       <div className="head">
@@ -10,13 +25,13 @@ const Popcorn = () => {
         </div>
       </div>
       <div className="Iconlist">
-        <div className="star"></div>
+        <div className="star" onClick={handleRatingsClick}></div>
         <br />
-        <div className="favourite"></div>
+        <div className="favourite" onClick={handleFavoritesClick}></div>
         <br />
         <input className="body" type="text" placeholder="Get Recommendation" />
         <br />
-        <div className="vectoricon"></div>
+        <div className="vectoricon" onClick={handleProfileClick}></div>
         <br />
         <div className="popcorn"></div>
       </div>

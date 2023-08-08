@@ -59,7 +59,7 @@ const AddButton = styled.button`
   margin-left: auto;
 `;
 
-const Page4 = () => {
+const Results = () => {
   const { movie_title } = useParams();
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]);
@@ -132,4 +132,4 @@ const Page4 = () => {
   );
 };
 
-export default Page4;
+export default Results;

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import StarIcon from "@mui/icons-material/Star";
 import MovieCard from "../components/MovieCard";
 import Movies from "../components/Movies";
 import { NowShowingHeader } from "../components/NowShowingText";
-import TryTheseText from "../components/TryTheseText";
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as PopcornIcon } from "../assets/icons/PopcornIcon.svg";
 
 const Container = styled.div``;
 
@@ -12,6 +14,12 @@ const ButtonContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
+`;
+
+const StyledIcon = styled(StarIcon)`
+  color: rgba(255, 195, 25, 1);
+  width: 32px;
+  height: 32px;
 `;
 
 const GetMoreRecommendationButton = styled.button`
@@ -29,20 +37,51 @@ const GetMoreRecommendationButton = styled.button`
   height: 34px;
 `;
 
-//Page 6  - Logged In
-const Page6 = () => {
+const PopcornButton = styled.button`
+  background: transparent;
+  border: none;
+  max-width: 20px;
+  cursor: pointer;
+  margin-right: 30px;
+`;
+
+const StarButton = styled.button`
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+`;
+
+//Page 3 - Logged In
+
+const TryThese2 = () => {
+  const navigate = useNavigate();
+
+  const handlePopcornClick = () => {
+    navigate("/pages/Popcorn/");
+  };
+
+  const handleStarClick = () => {
+    navigate("/pages/MyRatings/");
+  };
+
   return (
     <Container>
       <NowShowingHeader />
-      <TryTheseText />
       <ButtonContainer>
+        <StarButton>
+          <StyledIcon onClick={handleStarClick} />
+        </StarButton>
         <GetMoreRecommendationButton>
           Get More Recommendations
         </GetMoreRecommendationButton>
+        <PopcornButton>
+          <PopcornIcon onClick={handlePopcornClick} />
+        </PopcornButton>
       </ButtonContainer>
       <Movies>{(movies) => <MovieCard movies={movies} />}</Movies>
     </Container>
   );
 };
 
-export default Page6;
+export default TryThese2;
