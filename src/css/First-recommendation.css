@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'AC Filmstrip';
+    src: url('../fonts/ACFilmstrip.otf') format('opentype');
+}
+
+.FirstRecommendation{
+    /* height: 100%; */
+    min-height: 100vh;
+    background-color: black;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+}
+
+.top-bar button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.heading-label{
+    font-family: 'AC Filmstrip', sans-serif;
+    font-size: 42px;
+    color: gold;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #DBE3FF;
+}
+
+.search-icon{
+    color: #DBE3FF;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-text {
+    color: #fff;
+}
+
+.more-recommendations-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #323E4A;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-recommendations-button:hover {
+    background-color: #0056b3;
+}
