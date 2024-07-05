@@ -184,7 +184,47 @@
     /* border-radius: 4px; */
 }
 
-.StarAnimation .slider {
+
+.star-slider {
+    -webkit-appearance: none;
+    /* width: 200px; */
+    height: 2.5px;
+    align-self: center;
+    background: #FFC319;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.star-slider:hover {
+    opacity: 1;
+}
+
+.star-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold"><path d="M12 .587l3.668 7.431L24 9.168l-6 5.845 1.418 8.268L12 18.901l-7.418 4.38L6 15.013 0 9.168l8.332-1.15L12 .587z"/></svg>') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.star-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold"><path d="M12 .587l3.668 7.431L24 9.168l-6 5.845 1.418 8.268L12 18.901l-7.418 4.38L6 15.013 0 9.168l8.332-1.15L12 .587z"/></svg>') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* .StarAnimation .slider {
     margin-left: 10px;
     width: 100px;
     color: gold;
@@ -210,7 +250,7 @@
     border: none;
     cursor: pointer;
     color: gold;
-}
+} */
 
 .bottom-buttons {
     margin-top: 50px;

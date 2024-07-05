@@ -2,6 +2,7 @@
     font-family: 'AC Filmstrip';
     src: url('../fonts/ACFilmstrip.otf') format('opentype');
 }
+
 /* @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"); */
 
 
@@ -41,10 +42,10 @@
     align-items: center;
 }
 
-.heading-label{
+.heading-label-sharepopcorn{
     /* background-color: antiquewhite; */
     font-family: 'AC Filmstrip', sans-serif;
-    font-size: 42px;
+    font-size: 52px;
     color: white;
 }
 

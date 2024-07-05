@@ -29,8 +29,8 @@ function SharePopcorn() {
             <div className="top-bar-sharepopcorn">
             {/* <button onClick={handleFilterClick}>Filter</button> */}
                 {/* <MenuIcon className="hamburger-icon" onClick={handleFilterClick}/> */}
-                <span className="heading-label">SHARE</span>
-                <span className="heading-label">POPCORN</span>
+                <span className="heading-label-sharepopcorn">SHARE</span>
+                <span className="heading-label-sharepopcorn">POPCORN</span>
                 {/* <SearchIcon className="search-icon" style={{ cursor: 'pointer', fontSize: '24px' }} /> */}
             </div>
             <div className="message-container">

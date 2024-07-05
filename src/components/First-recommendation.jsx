@@ -39,7 +39,8 @@ function FirstRecommendation() {
         <div className="FirstRecommendation">
             <div className="top-bar-First-Rec">
                 <MenuIcon className="hamburger-icon" /> 
-                <span className="heading-label">Binge List</span>
+                {/* <span className="heading-label">Binge List</span> */}
+                <span className="heading-label">Try These</span>
                 <SearchIcon className="search-icon" style={{ cursor: 'pointer', fontSize: '24px' }} />            
             </div>
             <div className="first-rec-container">
