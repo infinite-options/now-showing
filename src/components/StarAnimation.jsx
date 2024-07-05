@@ -14,25 +14,20 @@ function StarAnimation() {
     };
     return(
         <div className="StarAnimation">
-            <div className="top-bar">
+            <div className="top-bar-star-annimation">
                 <MenuIcon className="hamburger-icon" /> 
                 <span className="heading-label">My Rating</span>
                 <NotificationsIcon className="bell-icon" style={{ cursor: 'pointer', fontSize: '24px' }} />
                 {/* <SearchIcon className="bell-icon" style={{ cursor: 'pointer', fontSize: '24px' }} /> */}
             </div>
 
-            <div className="search-bar">
+            <div className="search-bar-FirstScreen">
                 <SearchIcon className="search-icon" />
-                <input type="text" placeholder="Search Movie" />
+                <input className="search-text" type="text" placeholder="Search Movie" />
             </div>
 
-            <div className="button-row">
-                <button>Action</button>
-                <button>Comedy</button>
-                <button>Fantasy</button>
-                <button>Drama</button>
-            </div>
-            <div className="container">
+            
+            <div className="container-staranimation">
                 <h2 className="titleHeading">My Favorites</h2>
                 <div className="favorites">
                     {[...Array(5)].map((_, index) => (

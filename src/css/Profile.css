@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'AC Filmstrip';
+    src: url('../fonts/ACFilmstrip.otf') format('opentype');
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"); */
+
+@font-face {
+    font-family: 'Iowan Old Style';
+    /* "C:\Users\rusha\Documents\InfiniteOptions\movie-recommender\src\fonts\bitstream-iowan-old-style-bt-586c36a8d7712.ttf" */
+    src: url('../fonts/bitstream-iowan-old-style-bt-586c36a8d7712.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    /* C:\Users\rusha\Documents\InfiniteOptions\movie-recommender\src\fonts\merriweather.bold.ttf */
+    src: url('../fonts/merriweather.bold.ttf') format('truetype');
+}
+
+.Profile {
+    /* margin: auto; */
+    /* height: 100%; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.top-bar-Profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    /* background-color: #f0f0f0; */
+}
+
+.top-bar button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #DBE3FF;
+}
+
+.heading-label{
+    font-family: 'AC Filmstrip', sans-serif;
+    font-size: 42px;
+    color: gold;
+}
+
+.edit-icon{
+    color: #DBE3FF;
+}
+
+.bell-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #8DAAC8;
+    border-color: #8DAAC8;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #DBE3FF;
+}
+
+
+.container-profile{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #DBE3FF;
+    font-family: 'Merriweather', serif;
+
+}
+
+.text-box-class {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Iowan Old Style', serif;
+    font-size: 16px;
+    background-color: #192027;
+    /* border: 1px solid #DBE3FF; */
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(1, 1, 1, 1);
+    color: #DBE3FF;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.bottom-buttons-profile{
+    margin-top: 50px;
+}
+
+.get-recommendations-profile {
+    /* display: block; */
+    background-color: #323E4A;
+    /* width: 50%; */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #DBE3FF;
+    /* margin-bottom: 10px; */
+    transition: background-color 0.3s;
+}
+
+.login-button-profile {
+    /* display: block; */
+    /* width: 40%; */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #8DAAC8;
+    color: #fff;
+    font-family: Merriweather;
+    transition: background-color 0.3s;
+}

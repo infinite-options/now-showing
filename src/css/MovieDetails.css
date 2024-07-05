@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Merriweather';
+    /* C:\Users\rusha\Documents\InfiniteOptions\movie-recommender\src\fonts\merriweather.bold.ttf */
+    src: url('../fonts/merriweather.bold.ttf') format('truetype');
+}
+
+.MovieDetails {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #DBE3FF;
+    padding: 20px;
+}
+
+.MovieImage {
+    width: 100%;
+    height: 40%;
+    /* background-color: beige; */
+}
+
+.poster-image {
+    /* width: 100%;
+    height: 30%; */
+    /* overflow: hidden; */
+    object-fit: contain;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    /* margin: 1   0px; */
+    width: 90%;
+    /* background-color: antiquewhite; */
+    
+}
+
+.movie-title-container {
+    width: 100%;
+    /* background-color: aqua; */
+    text-align: left;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+}
+
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: left;
+}
+
+.genre {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 50px;
+}
+
+.smallHeadings{
+    color: #DBE3FF;
+    font-family: Merriweather;
+}
+
+.movie-description-container {
+    width: 100%;
+    text-align: left;
+    /* background-color: blueviolet; */
+}
+
+.movie-description {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    /* padding: 0 20px; */
+}
+
+.cast-container {
+    /* background-color: aqua; */
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.cast-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+
+.cast-cards {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+.cast-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.image-box {
+    width: 100px;
+    height: 100px;
+}
+
+.cast-image {
+    /* padding: 10px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    /* border: 2px solid #DBE3FF; */
+}
+
+.cast-name {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #DBE3FF;
+}
