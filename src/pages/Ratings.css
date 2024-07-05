@@ -1,0 +1,192 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ratings-my-ratings-container {
+  height: 600vh;
+  background-color: #192027;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ratings-rating-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.ratings-rating-header img {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.ratings-rating-header img.ratings-rating-menu {
+  width: 40px;
+}
+
+.ratings-rating-header img.ratings-myrating {
+  width: 250px;
+  margin-left: -10px; /* Adjust as needed */
+}
+
+.ratings-rating-header img.ratings-rating-notif {
+  width: 25px;
+}
+
+.ratings-filter {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ratings-search-input {
+  width: 60%;
+  padding: 10px 20px 10px 40px; /* Adjust padding to make space for the icon */
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgba(133, 133, 136, 0.1);
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Position the icon */
+  outline: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: gray;
+}
+
+.ratings-filter-buttons {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  margin-top: 10px;
+  gap: 10px; /* Add gap between buttons */
+  width: 80%; /* Ensure buttons take 80% width */
+  margin: 0 auto; /* Center align the buttons container */
+  margin-top: 30px;
+}
+
+.ratings-filter-button {
+  background-color: rgba(133, 133, 136, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px; /* Adjust padding to make buttons smaller */
+  cursor: pointer;
+  text-align: center;
+}
+
+.ratings-favorites {
+  margin-top: 20px;
+}
+
+.ratings-favorites-text {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.ratings-favorite-boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 column */
+  gap: 10px;
+}
+
+.ratings-favorite-input {
+  width: 340px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #1f262d;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); /* Shadow */
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #192027;
+  margin-bottom: 10px; /* Add margin between inputs */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: smaller;
+  padding-left: 10px; /* Add padding on the left */
+  color: #fff;
+}
+
+.ratings-rating-rec-button {
+  margin-top: 20px;
+}
+
+.ratings-rating-recommendations-button {
+  background-color: rgba(133, 133, 136, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.ratings-rating-signup-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ratings-rating-signup-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8DAAC8; /* Background color of buttons */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
+  height: 32px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.ratings-favorite-input-container {
+  position: relative;
+  width: 100%; /* Adjust the width to fit the content */
+  max-width: 340px; /* Limit the maximum width */
+}
+
+.ratings-favorite-input {
+  width: 320px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #1f262d;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); /* Shadow */
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 10px; /* Add padding on the left */
+  color: #fff;
+  padding-right: 20px; /* Add padding on the right to make space for the slider */
+}
+
+.ratings-favorite-slider {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 100px;
+}
+

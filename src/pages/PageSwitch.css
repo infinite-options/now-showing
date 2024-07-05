@@ -1,0 +1,28 @@
+.nav-buttons {
+  height: 600vh;
+  background-color: #192027;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.nav-button {
+  background-color: #192027;
+  color: #cbd4db;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left; /* Align text to the left */
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif; /* Change font to Times */
+  width: 100%; /* Added a width to make alignment more noticeable */
+  font-size: 1.5em;
+  margin-left: 30px;
+}
+
+.all-buttons{
+  margin-top: 50px;
+}

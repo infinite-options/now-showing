@@ -1,0 +1,141 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.logIn-container {
+  height: 100vh;
+  background-color: #192027;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logIn-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.logIn-header img {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.logIn-header img.logIn-menu {
+  width: 40px;
+}
+
+.logIn-header img.logIn-welcome {
+  width: 180px;
+  margin-left: -10px; /* Adjust as needed */
+}
+
+.logIn-header img.logIn-magnifying {
+  width: 20px;
+}
+
+.logIn-info {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align inputs to the center */
+}
+
+.logIn-info-input {
+  width: 80%; /* Increased width */
+  padding: 8px;
+  margin: 8px 10px;
+  border: none; /* Remove the border */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 16px;
+  outline: none;
+  text-align: left; /* Align text to the left */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.logIn-info-input.logIn-phone {
+  margin-top: -20px; /* Decrease margin top for phone input */
+}
+
+.logIn-segment {
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.logIn-segment-text {
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.logIn-segment-image {
+  width: 30px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+.logIn-info-text {
+  color: #fff; /* White text color */
+  font-size: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.logIn-signup-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logIn-login-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #192027; /* Background color of buttons */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logIn-signup-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8DAAC8; /* Background color of buttons */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+.logIn-signup-text {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.logIn-segment-image.popcorn {
+    width: 20px; /* or whatever size you prefer */
+    height: auto; /* maintains aspect ratio */
+}

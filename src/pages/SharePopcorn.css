@@ -1,0 +1,89 @@
+.share-popcorn-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #192027;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  padding: 0; /* Ensure no padding */
+}
+.share-image {
+  width: 250px; /* Adjust the size as needed */
+  margin-bottom: 10px; /* Space between the images */
+}
+
+/* Specific style for the popcorn image */
+.popcorn-image {
+  width: 320px; /* Adjust the size as needed */
+}
+
+.popcorn-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.thanks-message h1 {
+  font-size: 1.09em; /* Smaller size */
+  color: white;
+  text-align: left;
+  width: 100%;
+  margin-left: 30px;
+  font-weight: normal;
+}
+.invisible-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.invisible-table {
+  border-collapse: separate;
+  border-spacing: 20px; /* Adjust the spacing between images */
+  width: 70%; /* Adjust width as per your design */
+  margin: 0 auto; /* Center align the table */
+}
+
+.small-popcorn {
+  width: 40px; /* Adjust width for the smaller image */
+  vertical-align: bottom; 
+  margin-top: 50px;
+}
+
+.medium-popcorn {
+  width: 60px; /* Adjust width for the slightly larger image */
+  vertical-align: bottom; 
+  margin-top: 25px;
+}
+
+.large-popcorn {
+  width: 80px; /* Adjust width for the smaller image */
+  vertical-align: bottom; 
+  
+}
+
+.donation-amount {
+  color: white; /* Change text color to white */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+}
+
+.donate-button {
+  margin-top: 20px;
+}
+
+.donations-button {
+  background-color:rgba(133, 133, 136, 0.1);
+  color: #9DAAC2;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 220px;
+  height: 32px;
+  line-height: 0px;
+}

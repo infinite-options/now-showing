@@ -1,0 +1,120 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.binge-list-container {
+  height: 600vh;
+  background-color: #192027;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.binge-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.binge-header img {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.binge-header img.binge-menu {
+  width: 40px;
+}
+
+.binge-header img.binge {
+  width: 250px;
+  margin-left: -10px; /* Adjust as needed */
+}
+
+.binge-header img.binge-magnifying {
+  width: 20px;
+}
+
+.try-these-box {
+  background-color: #192027;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+  height: 10px
+}
+
+.try-these-box p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: -10px;
+  text-align: left;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-auto-rows: auto; /* Automatic row sizing based on content */
+  grid-gap: 10px; /* Increased gap between boxes */
+  margin-top: 20px;
+}
+
+.bmovie-box {
+  background-color: #192027;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 120px; /* Ensure each box takes full width of its grid cell */
+  height: 160px; /* Adjust height as needed */
+}
+
+.bmovie-image {
+  width: 100%; /* Adjust image width as needed */
+  height: auto; /* Adjust image height as needed */
+  object-fit: cover; /* Ensure image covers the box */
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+.bmovie-title {
+  margin-top: 2px; /* Space between image and title */
+  font-size: 9px; /* Adjust font size as needed */
+  color: #ffffff; /* Adjust color as needed */
+}
+
+.bmovie-rating {
+  text-align: right;
+  
+  font-size: 8px;
+  color: #888; /* Grey color for rating */
+}
+
+.rec-button {
+  margin-top: 20px;
+}
+
+.recommendations-button {
+  background-color:rgba(133, 133, 136, 0.1);
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.recommendations-button:hover {
+  background-color: rgba(133, 133, 136, 0.1);
+}
