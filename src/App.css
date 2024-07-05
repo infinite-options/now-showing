@@ -1,0 +1,51 @@
+body{
+  width: 100%;
+  background-color: #192027;
+}
+
+.App {
+  text-align: center;
+  color: white;
+  background-color: #192027;
+}
+
+h1{
+  color: #FFC319;
+}
+
+h3 {
+  color: #DBE3FF;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.StarIcon{
+  color:#FFC319;
+}
+
+
+title{
+  color: white;
+}
+
+.TextContent{
+  text-align: left;
+}
+
+.Description{
+  color: #9C9C9C;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.Header{
+    font-family: 'AC Filmstrip', sans-serif;
+    font-weight: 200;
+}

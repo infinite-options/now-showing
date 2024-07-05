@@ -1,0 +1,16 @@
+.Favorite-Movie {
+    
+
+    
+}
+
+
+.Favorite-Movie input{
+    background-color: transparent;
+    border-style: none;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.33)
+}
+input{
+    height: 100%;
+}

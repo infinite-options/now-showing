@@ -1,0 +1,13 @@
+.InputBar{
+    background-color: rgba(141, 170, 200, .21);
+    color: #F5F5F5;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.InputBar input{
+    min-height: 37px;
+    background-color: pink;
+}

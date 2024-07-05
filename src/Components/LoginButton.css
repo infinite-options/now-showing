@@ -1,0 +1,15 @@
+.LoginButton{
+    background-color: #8DAAC8;
+    color: #F5F5F5;
+    height: 34px;
+    border: none;
+    border-radius: 77px;
+    padding: auto;
+    min-width: 195px;
+    justify-items: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+}
